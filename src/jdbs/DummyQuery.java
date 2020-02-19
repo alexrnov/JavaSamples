@@ -89,7 +89,7 @@ public class DummyQuery {
         System.out.println("--------------------------------------");
         System.out.println("Подставной запрос: ");
         PreparedStatement stat2 = conn.prepareStatement(query1);
-        //для первого(и единственного в этом запросе) вопросительного
+        //для первого (и единственного в этом запросе) вопросительного
         // знака подставить значение 2
         stat2.setInt(1, 9);
         try (ResultSet result = stat2.executeQuery()) {
